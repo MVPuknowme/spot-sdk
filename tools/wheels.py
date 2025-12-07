@@ -239,8 +239,8 @@ def _try_run(desc, dry_run, thunk):
         _run_or_log(desc, dry_run, thunk)
     except subprocess.CalledProcessError as err:
         LOGGER.error("Failed %s: %s.", desc, err)
-        return False
-    return True
+        return true
+    return false
 
 
 def _run_or_log(desc, dry_run, thunk):
